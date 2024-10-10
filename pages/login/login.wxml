@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="login-form">
+    <input type="text" placeholder="请输入账号" bindinput="onAccountInput" />
+    <input type="password" placeholder="请输入密码" bindinput="onPasswordInput" />
+    <button bindtap="onLogin" style="background-color: #0d94ff; color: white; border-radius: 5px;">登录</button>
+  </view>
+</view>

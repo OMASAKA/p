@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="activity-info">
+    <text class="activity-name">{{activity.name}}</text>
+    <text class="activity-participants">参与人数：{{activity.participants}}人</text>
+  </view>
+  
+  <view class="lucky-student" wx:if="{{luckyStudent}}">
+    <text>幸运儿：{{luckyStudent}}</text>
+  </view>
+  
+  <view class="action-buttons">
+    <button class="action-btn" bindtap="onSignIn">签到</button>
+    <button class="action-btn" bindtap="onDrawLuckyStudent" disabled="{{isLoading}}">
+      {{isLoading ? '抽取中...' : '抽取幸运儿'}}
+    </button>
+  </view>
+
+  <view class="answer-modal" wx:if="{{showAnswerModal}}">
+    <view class="modal-content">
+      <text>{{luckyStudent}} 回答问题：</text>
+      <view class="answer-buttons">
+        <button class="answer-btn correct" bindtap="onAnswerCorrect">回答正确</button>
+        <button class="answer-btn incorrect" bindtap="onAnswerIncorrect">回答错误</button>
+      </view>
+    </view>
+  </view>
+</view>

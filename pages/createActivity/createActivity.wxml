@@ -1,0 +1,27 @@
+<view class="container">
+  <form bindsubmit="onSubmit">
+    <view class="form-group">
+      <text class="label">活动名称</text>
+      <view class="input-container">
+        <input name="activityName" placeholder="请输入活动名称" />
+      </view>
+    </view>
+    
+    <view class="form-group">
+      <text class="label">活动描述</text>
+      <view class="input-container">
+        <textarea name="activityDescription" placeholder="请输入活动描述"></textarea>
+      </view>
+    </view>
+    
+    <view class="form-group">
+      <text class="label">上传文件</text>
+      <button class="upload-btn" bindtap="onUpload">上传 XLSX 文件</button>
+      <text class="file-name" wx:if="{{fileName}}">{{fileName}}</text>
+    </view>
+    
+    <view class="submit-container">
+      <button class="submit-btn" form-type="submit">创建活动</button>
+    </view>
+  </form>
+</view>

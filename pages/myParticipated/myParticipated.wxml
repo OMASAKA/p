@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="activity-list">
+    <view class="activity-item" bindtap="goToParticipatedDetail">
+      <text class="activity-name">2024软件工程K班</text>
+      <text class="activity-participants">参与人数: 104</text>
+    </view>
+  </view>
+</view>

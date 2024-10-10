@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/created/created",
+    "pages/participated/participated",
+    "pages/store/store",
+    "pages/createActivity/createActivity",
+    "pages/participatedDetail/participatedDetail",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "点名小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#0d94ff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/created/created",
+        "text": "我创建的",
+        "iconPath": "assets/icon-created.png",
+        "selectedIconPath": "assets/icon-created-active.png"
+      },
+      {
+        "pagePath": "pages/participated/participated",
+        "text": "我参与的",
+        "iconPath": "assets/icon-participated.png",
+        "selectedIconPath": "assets/icon-participated-active.png"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "商店",
+        "iconPath": "assets/icon-store.png",
+        "selectedIconPath": "assets/icon-store-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

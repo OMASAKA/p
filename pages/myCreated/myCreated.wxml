@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="search-bar">
+    <input type="text" placeholder="搜索活动" />
+  </view>
+  <button class="btn-create">创建自定义</button>
+  <view class="activity-list">
+    <view class="activity-item" bindtap="goToActivityDetail">
+      <text class="activity-name">活动名称</text>
+      <text class="activity-participants">参与人数: 50</text>
+    </view>
+  </view>
+</view>

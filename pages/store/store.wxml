@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="user-points">
+    <text class="points-text">当前积分：{{userPoints}}</text>
+  </view>
+
+  <view class="card-list">
+    <view class="card-item" wx:for="{{cards}}" wx:key="id">
+      <text class="card-name">{{item.name}}</text>
+      <image class="card-image" src="{{item.image}}" mode="aspectFit"></image>
+      <view class="card-info">
+        <text class="card-price">{{item.price}} 积分</text>
+        <button class="buy-btn" bindtap="onBuy" data-id="{{item.id}}">
+          购买
+        </button>
+      </view>
+    </view>
+  </view>
+  
+  <view class="bottom-section">
+    <button class="guess-btn" bindtap="onGuess">
+      猜题赢积分
+    </button>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="activity-list">
+    <view class="activity-item" bindtap="onActivityTap" data-id="1">
+      <text class="activity-name">2024软件工程K班</text>
+      <text class="activity-participants">参与人数：104人</text>
+    </view>
+    <!-- 可以添加更多活动项 -->
+  </view>
+</view>

@@ -1,0 +1,92 @@
+.container {
+  background-color: #f4f3f3;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  padding: 20px;
+}
+
+.search-container {
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-bar icon {
+  margin-right: 5px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  height: 30px;
+  font-size: 14px;
+}
+
+.activity-summary {
+  background-color: #0d94ff;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.summary-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.summary-participants {
+  font-size: 14px;
+}
+
+.activity-list {
+  padding: 20px;
+}
+
+.activity-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.activity-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.activity-participants {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.no-activities {
+  text-align: center;
+  color: #999;
+  margin-top: 50px;
+  padding: 0 20px;
+}

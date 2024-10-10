@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="activity-info">
+    <text class="activity-name">活动名称</text>
+    <text class="activity-participants">参与人数: 50</text>
+  </view>
+  <view class="action-buttons">
+    <button class="btn-action" bindtap="randomNameCall">随机点名</button>
+    <button class="btn-action" bindtap="randomQuestion">回答问题</button>
+  </view>
+  <view class="selected-user" wx:if="{{selectedUser}}">
+    <text class="selected-user-name">{{selectedUser}}</text>
+    <view class="score-buttons">
+      <button class="btn-score" bindtap="addScore">+1分</button>
+      <button class="btn-score" bindtap="minusScore">-1分</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="search-bar">
+    <input type="text" placeholder="搜索活动" bindinput="onSearchInput" />
+  </view>
+  
+  <view class="activity-list">
+    <block wx:for="{{activities}}" wx:key="id">
+      <button class="activity-item" bindtap="onActivityTap" data-id="{{item.id}}">
+        <view class="activity-info">
+          <text class="activity-name">{{item.name}}</text>
+          <text class="activity-participants">参与人数：{{item.participants}}</text>
+        </view>
+      </button>
+    </block>
+  </view>
+  
+  <button class="create-btn" bindtap="onCreateActivity">创建自定义</button>
+</view>
